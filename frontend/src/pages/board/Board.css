@@ -9,4 +9,47 @@
         gap: 1rem;
     }
 }
+.board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  gap: 16px;
+ 
+}
+
+.board-search {
+  display: flex;
+  align-items: center;
+  border: 2px solid #5a84ff;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  height: 40px;
+}
+
+.board-search-input {
+  border: none;
+  padding: 0 12px;
+  outline: none;
+  font-size: 14px;
+  min-width: 280px;   
+}
+
+.board-search-btn {
+  background: #5a84ff;
+  color: #fff;
+  border: none;
+  padding: 0 12px;
+  height: 100%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-search-btn:hover {
+  filter: brightness(0.95);
+}
+
 

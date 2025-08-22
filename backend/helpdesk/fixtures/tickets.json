@@ -8,7 +8,7 @@
       "description": "El sistema no permite iniciar sesión con credenciales válidas.",
       "priority": "high",
       "reporter_name": "David",
-      "email": "david@test.com",
+      "email": "david@gmail.com",
       "state": "new"
     }
   },
@@ -21,7 +21,7 @@
       "description": "El endpoint /api/data devuelve un error 500.",
       "priority": "medium",
       "reporter_name": "Ana",
-      "email": "ana@test.com",
+      "email": "ana@gmail.com",
       "state": "in_progress"
     }
   },
@@ -34,7 +34,7 @@
       "description": "La pasarela de pagos rechaza transacciones válidas.",
       "priority": "high",
       "reporter_name": "Carlos",
-      "email": "carlos@test.com",
+      "email": "carlos@gmail.com",
       "state": "resolved"
     }
   },
@@ -47,7 +47,7 @@
       "description": "Los correos automáticos no se están enviando.",
       "priority": "low",
       "reporter_name": "Lucía",
-      "email": "lucia@test.com",
+      "email": "lucia@gmail.com",
       "state": "new"
     }
   },
@@ -60,7 +60,7 @@
       "description": "El panel de métricas no carga datos.",
       "priority": "medium",
       "reporter_name": "Miguel",
-      "email": "miguel@test.com",
+      "email": "miguel@gmail.com",
       "state": "in_progress"
     }
   }

@@ -114,3 +114,9 @@
     }
 }
 
+.ticket-error {
+  margin-top: 8px;
+  color: crimson;
+  font-size: 0.9rem;
+  font-weight: 500;
+}

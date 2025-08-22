@@ -38,7 +38,7 @@ export default function TicketDetail() {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
   const [loading, setLoading] = useState(false);
-
+  const [error, setError] = useState(null); 
 
   const STATES = [
   { value: "new", label: "Nuevo" },
@@ -82,18 +82,41 @@ export default function TicketDetail() {
     return found ? found.label : value;
   };
 
-  const handleChangeState = async (e) => {
-    const newState = e.target.value;
-    try {
-      const res = await client.patch(`/tickets/update-status`, {
-        ticket_id: id,
-        state: newState,
-      });
-      setTicket(res.data);
-    } catch (err) {
-      console.error(err);
+const handleChangeState = async (e) => {
+  const newState = e.target.value;
+  try {
+    const res = await client.patch(`/tickets/update-status`, {
+      ticket_id: id,
+      state: newState,
+    });
+    setTicket(res.data);
+    setError(null);
+  } catch (err) {
+    console.error(err);
+
+    if (err.response?.data) {
+      const data = err.response.data;
+
+
+      if (data.state) {
+        const rawMsg = data.state[0];
+
+       
+        let translated = rawMsg;
+        STATES.forEach((s) => {
+          translated = translated.replaceAll(`'${s.value}'`, `'${s.label}'`);
+        });
+
+        setError(translated);
+      } else {
+        setError(JSON.stringify(data));
+      }
+    } else {
+      setError("Error cambiando el estado");
     }
-  };
+  }
+};
+
 
   if (loading || !ticket) return <p>Cargando...</p>;
 
@@ -122,6 +145,8 @@ export default function TicketDetail() {
                   ))}
                 </select>
               </label>
+             {error && <p className="ticket-error">{error}</p>}
+
             </div>
             <span className="ticket-date">{formatDate(ticket.created_at)}</span>
           </div>

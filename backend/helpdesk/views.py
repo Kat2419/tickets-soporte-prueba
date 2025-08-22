@@ -2,7 +2,7 @@
 # Puedes empezar con un endpoint placeholder si lo deseas.
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import TicketSerializer,CommentSerializer
+from .serializers import TicketSerializer,CommentSerializer, TransitionSerializer
 from rest_framework import status
 from .models import Ticket, Comment
 
