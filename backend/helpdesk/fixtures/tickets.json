@@ -1,0 +1,67 @@
+[
+  {
+    "model": "helpdesk.ticket",
+    "pk": 1,
+    "fields": {
+      "created_at": "2025-08-21 10:00",
+      "title": "Error en login",
+      "description": "El sistema no permite iniciar sesión con credenciales válidas.",
+      "priority": "high",
+      "reporter_name": "David",
+      "email": "david@test.com",
+      "state": "new"
+    }
+  },
+  {
+    "model": "helpdesk.ticket",
+    "pk": 2,
+    "fields": {
+      "created_at": "2025-08-21 11:00",
+      "title": "Bug en API",
+      "description": "El endpoint /api/data devuelve un error 500.",
+      "priority": "medium",
+      "reporter_name": "Ana",
+      "email": "ana@test.com",
+      "state": "in_progress"
+    }
+  },
+  {
+    "model": "helpdesk.ticket",
+    "pk": 3,
+    "fields": {
+      "created_at": "2025-08-21 12:00",
+      "title": "Problema con pagos",
+      "description": "La pasarela de pagos rechaza transacciones válidas.",
+      "priority": "high",
+      "reporter_name": "Carlos",
+      "email": "carlos@test.com",
+      "state": "resolved"
+    }
+  },
+  {
+    "model": "helpdesk.ticket",
+    "pk": 4,
+    "fields": {
+      "created_at": "2025-08-21 13:00",
+      "title": "Error en notificaciones",
+      "description": "Los correos automáticos no se están enviando.",
+      "priority": "low",
+      "reporter_name": "Lucía",
+      "email": "lucia@test.com",
+      "state": "new"
+    }
+  },
+  {
+    "model": "helpdesk.ticket",
+    "pk": 5,
+    "fields": {
+      "created_at": "2025-08-21 14:00",
+      "title": "Bug en dashboard",
+      "description": "El panel de métricas no carga datos.",
+      "priority": "medium",
+      "reporter_name": "Miguel",
+      "email": "miguel@test.com",
+      "state": "in_progress"
+    }
+  }
+]

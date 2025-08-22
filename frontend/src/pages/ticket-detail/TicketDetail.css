@@ -1,0 +1,116 @@
+.ticket-detail {
+    padding: 1rem 2rem;
+    .ticket-detail-container {
+        margin: auto;
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+}
+}
+.ticket-detail-info {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+    background-color: #f7f7ff;
+
+    .ticket-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ticket-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .ticket-priority {
+            font-size: 1.1rem;
+        }
+    }
+    .ticket-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .ticket-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+
+    }
+    .ticket-date {
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: rgb(86, 86, 86);
+    }
+}
+
+.ticket-detail-comment-input {
+    width: 96%;
+    height: 60px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    margin: 1rem 1%;
+}
+.ticket-comment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+.ticket-detail-comments {
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #f7f7ff;
+    span {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+    }
+}
+.ticket-detail-comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+        border-bottom: 1px solid #e4e4e4;
+        padding: 1rem 0;
+
+        .comment-date {
+            font-size: 0.8rem;
+            color: #666;
+            margin-left: 0.5rem;
+        }
+        .comment-content {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #444;
+        }
+    }
+}
+

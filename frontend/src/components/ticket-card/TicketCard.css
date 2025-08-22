@@ -1,0 +1,51 @@
+.ticket {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+    background-color: #f7f7ff;
+
+    .ticket-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ticket-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .ticket-priority {
+            font-size: 1.1rem;
+        }
+    }
+    .ticket-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .ticket-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+
+    }
+    .ticket-date {
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: rgb(86, 86, 86);
+    }
+}

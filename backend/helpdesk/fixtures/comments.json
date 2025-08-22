@@ -1,0 +1,92 @@
+[
+  {
+    "model": "helpdesk.comment",
+    "pk": 1,
+    "fields": {
+      "created_at": "2025-08-21 10:30",
+      "ticket": 1,
+      "description": "Se verificó el error en el login."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 2,
+    "fields": {
+      "created_at": "2025-08-21 10:45",
+      "ticket": 1,
+      "description": "Se está investigando el problema."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 3,
+    "fields": {
+      "created_at": "2025-08-21 11:30",
+      "ticket": 2,
+      "description": "El error 500 ocurre en producción."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 4,
+    "fields": {
+      "created_at": "2025-08-21 11:45",
+      "ticket": 2,
+      "description": "Posible problema con la base de datos."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 5,
+    "fields": {
+      "created_at": "2025-08-21 12:30",
+      "ticket": 3,
+      "description": "El bug de pagos fue reproducido."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 6,
+    "fields": {
+      "created_at": "2025-08-21 12:45",
+      "ticket": 3,
+      "description": "Se aplicó fix temporal."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 7,
+    "fields": {
+      "created_at": "2025-08-21 13:30",
+      "ticket": 4,
+      "description": "Notificaciones revisadas."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 8,
+    "fields": {
+      "created_at": "2025-08-21 13:45",
+      "ticket": 4,
+      "description": "Posible error de SMTP."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 9,
+    "fields": {
+      "created_at": "2025-08-21 14:30",
+      "ticket": 5,
+      "description": "Dashboard no carga en Chrome."
+    }
+  },
+  {
+    "model": "helpdesk.comment",
+    "pk": 10,
+    "fields": {
+      "created_at": "2025-08-21 14:45",
+      "ticket": 5,
+      "description": "Se revisa compatibilidad con frontend."
+    }
+  }
+]
